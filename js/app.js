@@ -51,6 +51,7 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
+    console.log(post.comments[0].user)
     const { image, userImage } = post;
     //const image = post.image;
     //const userImage = post.userImage; //second problem solved. profile image destructuring from an object was not correct.
@@ -122,9 +123,9 @@ const createPost = (post) => {
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
-                          ${post.comments?.user}
+                          ${post.comments[0].user}
                       </a>
-                      ${post.comments?.text}
+                      ${post.comments[0].user}
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>
