@@ -27,7 +27,7 @@ const reportPost = (id) => {
 };
 
 const displayContent = (text) => {
-    return text.length < 30 ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
+    return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";//text is a variable it should not written in quotation.
 };
 
 const switchTab = (id) => {
@@ -51,7 +51,7 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
-    console.log(post.comments[0].user)
+    console.log(post.description)
     const { image, userImage } = post;
     //const image = post.image;
     //const userImage = post.userImage; //second problem solved. profile image destructuring from an object was not correct.
