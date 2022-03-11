@@ -94,14 +94,18 @@
     </main>
     <!-- answering section -->
     <section class="container my-5">
-      <h2 class="my-3 text-center">Answers are here.</h2>
+      <h2 class="my-3 text-center">Answers are here</h2>
       <div class="row row-cols-2">
         <div class="col mb-3">
           <div class="card border-warning h-100">
             <div class="card-header">How does JS work?</div>
             <div class="card-body">
               <p class="card-text">
-                When we run a JS file in a browser, first a HTML
+                JS work in browser with help of various engine. in chrome the
+                engine name is v8 engine. when we run some js code, v8 engine
+                pass that code in parser and then make a syntex tree. then
+                interpreted that code using jit compiler called TurboFan and
+                then execute the output.
               </p>
             </div>
           </div>
@@ -129,24 +133,25 @@
               <div class="row row-cols-2">
                 <div class="col">
                   <ol>
+                    <caption>Local Storage</caption>
+                    <li>Local storage holds data permanently.</li>
                     <li>Local storage data does not delete automatically.</li>
-                    <li>
-                      When we change data in local storage then we can access
-                      this from all tabs.
-                    </li>
+                    <li>We can access local storage data from any window.</li>
+                    <li>Local storage can store data upto 10MB.</li>
                   </ol>
                 </div>
                 <div class="col">
                   <ol>
+                    <caption>Session Storage</caption>
+                    <li>Session storage does not holds data permanently.</li>
                     <li>
-                      Local storage data delete automatically when we close the
-                      browser.
+                      Session storage data delete automatically when we close
+                      the browser or the tab.
                     </li>
                     <li>
-                      When we change data in session storage, changes data only
-                      accessible from the current tab. and when we close that
-                      tab, the data will be cleared.
+                      We only access session storage data from the same tab.
                     </li>
+                    <li>Session storage can store data upto 5MB.</li>
                   </ol>
                 </div>
               </div>
