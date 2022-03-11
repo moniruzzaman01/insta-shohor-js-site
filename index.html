@@ -79,56 +79,76 @@
       </nav>
     </header>
     <main class="main container mx-auto p-3">
-      <div id="posts"></div>
-      <div id="liked">
+      <div id="posts">
+        <!-- all posts will be shown here. -->
+      </div>
+      <div>
         <h1>Liked posts</h1>
+        <div id="liked"></div>
       </div>
 
-      <div id="reported">
+      <div>
         <h1>Reported posts</h1>
+        <div id="reported"></div>
       </div>
     </main>
     <!-- answering section -->
     <section class="container my-5">
       <h2 class="my-3 text-center">Answers are here.</h2>
       <div class="row row-cols-2">
-        <div class="col">
-          <div class="card border-warning mb-3">
+        <div class="col mb-3">
+          <div class="card border-warning h-100">
             <div class="card-header">How does JS work?</div>
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                When we run a JS file in a browser, first a HTML
               </p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card border-warning mb-3">
+        <div class="col mb-3">
+          <div class="card border-warning h-100">
             <div class="card-header">What does JS event loop do?</div>
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                JS event loop is a great thing that helps JS to act like or work
+                like an asynchronous programming language. we know that JS
+                programming language work in synchronous process. but if we use
+                some special structure then we can force JS to work like
+                asynchronous process.
               </p>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <div class="card border-warning mb-3">
+        <div class="col mb-3">
+          <div class="card border-warning h-100">
             <div class="card-header">Local storage vs session storage.</div>
             <div class="card-body">
               <div class="row row-cols-2">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <div class="col">
+                  <ol>
+                    <li>Local storage data does not delete automatically.</li>
+                    <li>
+                      When we change data in local storage then we can access
+                      this from all tabs.
+                    </li>
+                  </ol>
+                </div>
+                <div class="col">
+                  <ol>
+                    <li>
+                      Local storage data delete automatically when we close the
+                      browser.
+                    </li>
+                    <li>
+                      When we change data in session storage, changes data only
+                      accessible from the current tab. and when we close that
+                      tab, the data will be cleared.
+                    </li>
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
